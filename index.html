@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#170b18">
+  <meta name="description" content="Welcome to Miss Ayleen's little pink world.">
+  <title>Miss Ayleen ♡ — Little Pink World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="floaties" aria-hidden="true">
+    <span>♡</span><span>✧</span><span>୨୧</span><span>♡</span><span>✦</span><span>୨୧</span>
+  </div>
+
+  <div class="welcome" id="welcome">
+    <div class="welcome-card">
+      <div class="welcome-flower">୨୧</div>
+      <p class="eyebrow">A LITTLE WORLD MADE OF PINK</p>
+      <h1>Welcome, lovely</h1>
+      <p class="welcome-copy">A tiny corner of the internet belonging to<br> <span>Miss Ayleen</span> ♡</p>
+      <button class="primary-btn" id="enterBtn">Enter my world <span>♡</span></button>
+      <small>best viewed with a little sparkle</small>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">✿</span> Miss Ayleen</a>
+    <nav aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#vibes">Vibes</a>
+      <a href="#social">Find me</a>
+    </nav>
+    <div class="online"><i></i> in my own world</div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-art">
+        <div class="art-glow"></div>
+        <img src="assets/ayleen-avatar.jpg" alt="Cute pastel anime girl with long dark hair and a pink bow" class="main-art">
+        <span class="art-sticker sticker-one">♡</span>
+        <span class="art-sticker sticker-two">✧</span>
+        <div class="art-note">stay soft<br>stay lovely <span>୨୧</span></div>
+        <div class="mini-tag"><span>✿</span> just a little daydream</div>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow"><span class="line"></span> WELCOME TO MY LITTLE WORLD <span class="line"></span></p>
+        <h1>Miss <em>Ayleen</em><span class="heart">♡</span></h1>
+        <p class="subtitle">A little chaos, a lot of giggles.</p>
+        <div class="profile-card glass">
+          <div class="card-heading"><span>✿</span> A LITTLE ABOUT ME <span>✿</span></div>
+          <div class="profile-grid">
+            <div class="profile-item"><span class="item-icon">♡</span><div><small>Name</small><strong>Miss Ayleen</strong></div></div>
+            <div class="profile-item"><span class="item-icon">✧</span><div><small>Age</small><strong>18</strong></div></div>
+            <div class="profile-item"><span class="item-icon">☁</span><div><small>Favourite word</small><strong class="pink-script">Bahahahaha</strong></div></div>
+            <div class="profile-item"><span class="item-icon">🌍</span><div><small>From</small><strong>Earth</strong></div></div>
+            <div class="profile-item"><span class="item-icon">❀</span><div><small>Cast</small><strong>Pathani</strong></div></div>
+            <div class="profile-item"><span class="item-icon">☾</span><div><small>Discord ID</small><strong>scaredbunnyy</strong></div></div>
+          </div>
+          <div class="card-bottom"><span>♡</span> collecting little happy moments <span>♡</span></div>
+        </div>
+
+        <div class="music-card glass" id="vibes">
+          <div class="music-icon">♫</div>
+          <div class="music-info"><small>NOW PLAYING IN MY HEAD</small><strong>Bahahahaha <span>♪</span></strong></div>
+          <div class="equalizer" id="equalizer" aria-label="Decorative animated sound visualizer">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <button class="play-btn" id="playBtn" aria-label="Pause visualizer" aria-pressed="true">Ⅱ</button>
+        </div>
+
+        <div class="bio-card glass" id="about">
+          <div class="section-label"><span>♡</span> A NOTE FROM ME <span>♡</span></div>
+          <p>♡ Come and be part of :</p>
+          <h2>Bahahahaha <span>♡</span></h2>
+          <div class="bio-sparkle">✧ &nbsp; ✿ &nbsp; ✧</div>
+        </div>
+
+        <a class="discord-card" id="social" href="https://discord.com/users/scaredbunnyy" target="_blank" rel="noopener noreferrer">
+          <span class="discord-symbol">◉</span>
+          <span><small>LET'S BE FRIENDS</small><strong>Find me on Discord</strong><em>@scaredbunnyy</em></span>
+          <b>↗</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="closing">
+      <span class="closing-flower">✿</span>
+      <p>Thanks for stopping by</p>
+      <h2>Stay sweet, stay magical <span>♡</span></h2>
+      <div class="tiny-stars">✧　♡　✧　୨୧　✧</div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Miss Ayleen</span><span>made with <b>♡</b> and a little bit of magic</span><a href="#home">back to top ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite">Discord ID copied ♡</div>
+  <script src="script.js"></script>
+</body>
+</html>
